@@ -2077,22 +2077,29 @@ progress {
   color: #7987a1;
 }
 
-.form-control, .typeahead.tt-input,
-.typeahead.tt-hint, .select2-container--default .select2-search--dropdown .select2-search__field {
-  display: block;
-  width: 100%;
-  padding: 0.469rem 0.8rem;
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #000;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #e9ecef;
-  appearance: none;
-  border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
+
+.form-control,
+        .typeahead.tt-input,
+        .typeahead.tt-hint,
+        .select2-container--default .select2-search--dropdown .select2-search__field {
+            display: block;
+            width: 100%;
+            padding: 0.469rem 0.8rem;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.5;
+            color: var(--bs-gray-dark);
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #e9ecef;
+            appearance: none;
+            border-radius: 0.25rem;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+
+
+
+
 @media (prefers-reduced-motion: reduce) {
   .form-control, .typeahead.tt-input,
   .typeahead.tt-hint, .select2-container--default .select2-search--dropdown .select2-search__field {
@@ -2710,16 +2717,52 @@ div.tox .input-group-sm > .tox-button,
   display: block;
 }
 
-.was-validated .form-control:valid, .was-validated .typeahead.tt-input:valid,
-.was-validated .typeahead.tt-hint:valid, .was-validated .select2-container--default .select2-search--dropdown .select2-search__field:valid, .select2-container--default .select2-search--dropdown .was-validated .select2-search__field:valid, .form-control.is-valid, .is-valid.typeahead.tt-input,
-.is-valid.typeahead.tt-hint, .select2-container--default .select2-search--dropdown .is-valid.select2-search__field {
-  border-color: #6571ff;
-  padding-right: calc(1.5em + 0.938rem);
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2305a34a' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-position: right calc(0.375em + 0.2345rem) center;
-  background-size: calc(0.75em + 0.469rem) calc(0.75em + 0.469rem);
-}
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: #6571ff;
+        }
+
+        .col-2x {
+            flex: 0 0 auto;
+            width: 10%;
+        }
+
+        .col-10x {
+            flex: 0 0 auto;
+            width: 90%;
+        }
+
+        .input-group-textq {
+            display: flex;
+            align-items: center;
+            padding: 2px 4px;
+            text-align: center;
+            white-space: nowrap;
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 0.25rem;
+        }
+
+
+        .was-validated .form-control:valid,
+        .was-validated .typeahead.tt-input:valid,
+        .was-validated .typeahead.tt-hint:valid,
+        .was-validated .select2-container--default .select2-search--dropdown .select2-search__field:valid,
+        .select2-container--default .select2-search--dropdown .was-validated .select2-search__field:valid,
+        .form-control.is-valid,
+        .is-valid.typeahead.tt-input,
+        .is-valid.typeahead.tt-hint,
+        .select2-container--default .select2-search--dropdown .is-valid.select2-search__field {
+            border-color: #6571ff;
+            padding-right: calc(1.5em + 0.938rem);
+            background-repeat: no-repeat;
+            background-position: right calc(0.375em + 0.2345rem) center;
+            background-size: calc(0.75em + 0.469rem) calc(0.75em + 0.469rem);
+        }
+
 .was-validated .form-control:valid:focus, .was-validated .typeahead.tt-input:valid:focus,
 .was-validated .typeahead.tt-hint:valid:focus, .was-validated .select2-container--default .select2-search--dropdown .select2-search__field:valid:focus, .select2-container--default .select2-search--dropdown .was-validated .select2-search__field:valid:focus, .form-control.is-valid:focus, .is-valid.typeahead.tt-input:focus,
 .is-valid.typeahead.tt-hint:focus, .select2-container--default .select2-search--dropdown .is-valid.select2-search__field:focus {
@@ -4386,14 +4429,15 @@ div.tox .btn-group-vertical > .btn-group:not(:first-child) > .tox-button,
 }
 
 .card-body {
-  flex: 1 1 auto;
-  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
-  color: var(--bs-card-color);
-}
+            flex: 1 1 auto;
+            padding: 12px;
+            color: var(--bs-card-color);
+        }
 
-.card-title {
-  margin-bottom: var(--bs-card-title-spacer-y);
-}
+        .card-title {
+            margin-bottom: 7px;
+        }
+
 
 .card-subtitle {
   margin-top: calc(-0.5 * var(--bs-card-title-spacer-y));
