@@ -4,7 +4,6 @@ var aktivasi = "KonterQu";
 var keywoard = document.getElementById('player');
 var load = document.getElementById('load');
 var oprator = document.getElementById('nickname');
-var operator = document.getElementById('provider');
 var salah = document.getElementById('tidak_valid');
 var nick_tampil = document.getElementById('nick');
 var validasi = "";
@@ -38,8 +37,13 @@ function gas() {
 
                 keywoard.classList.remove('is-invalid');
                 keywoard.classList.add('is-valid');
-                operator.innerHTML = "<img src='https://i.ibb.co/GWL8Ctp/byu.png' width='25' height='25'>"
-                oprator.innerHTML = "<span class='byu'><strong>ByU</strong></span >"
+                oprator.innerHTML = 
+                `
+                    <img src='https://i.ibb.co/GWL8Ctp/byu.png' width='25' height='25'>
+                    <span class='byu'>
+                        <strong>ByU</strong>
+                    </span >
+                `
                 $('#produk').empty();
                 $('#produk').append(`
     <option id="" value="">Pulsa By U</option>
@@ -50,8 +54,11 @@ function gas() {
             } else {
                 keywoard.classList.remove('is-invalid');
                 keywoard.classList.add('is-valid');
-                operator.innerHTML = "<img src='https://i.ibb.co/sg0G3ZC/tsel.png' width='25' height='25'>"
-                oprator.innerHTML = "<span class='tsel'><strong>TELKOMSEL</strong></span >"
+                oprator.innerHTML =
+                    `
+                    <img src='https://i.ibb.co/sg0G3ZC/tsel.png' width='25' height='25'>
+                    <span class='tsel'><strong>TELKOMSEL</strong></span >
+                `
                 $('#produk').empty();
                 $('#produk').append(`
     <option id="" value="">Telkomsel</option>
@@ -62,8 +69,11 @@ function gas() {
         } else if (x == 0814 || x == 0815 || x == 0816 || x == 0855 || x == 0856 || x == 0857 || x == 0858) {
             keywoard.classList.remove('is-invalid');
             keywoard.classList.add('is-valid');
-            operator.innerHTML = "<img src='https://i.ibb.co/JqgkRSQ/indosat.png' width='25' height='25'>"
-            oprator.innerHTML = "<span class='indosat'><strong>INDOSAT</strong></span >"
+            oprator.innerHTML =
+                `
+                    <img src='https://i.ibb.co/JqgkRSQ/indosat.png' width='25' height='25'>
+                    <span class='indosat'><strong>INDOSAT</strong></span >
+                `
             $('#produk').empty();
             $('#produk').append(`
     <option id="" value="">Pulsa Indosat</option>
@@ -75,8 +85,11 @@ function gas() {
         else if (x == 0895 || x == 0896 || x == 0897 || x == 0898 || x == 0899) {
             keywoard.classList.remove('is-invalid');
             keywoard.classList.add('is-valid');
-            operator.innerHTML = "<img src='https://i.ibb.co/ccmXGsx/three.png' width='25' height='25'>"
-            oprator.innerHTML = "<span class='tree'><strong>THREE</strong></span >"
+            oprator.innerHTML =
+                `
+                    <img src='https://i.ibb.co/ccmXGsx/three.png' width='25' height='25'>
+                    <span class='tree'><strong>THREE</strong></span >
+                `
             $('#produk').empty();
             $('#produk').append(`
     <option id="" value="">Pulsa Three</option>
@@ -88,8 +101,11 @@ function gas() {
         else if (x == 0838 || x == 0831 || x == 0832 || x == 0833) {
             keywoard.classList.remove('is-invalid');
             keywoard.classList.add('is-valid');
-            operator.innerHTML = "<img src='https://i.ibb.co/Tc88ZDZ/axis.png' width='25' height='25'>"
-            oprator.innerHTML = "<span class='axis'><strong>AXIS</strong></span >"
+            oprator.innerHTML =
+                `
+                    <img src='https://i.ibb.co/Tc88ZDZ/axis.png' width='25' height='25'>
+                    <span class='axis'><strong>AXIS</strong></span >
+                `
             $('#produk').empty();
             $('#produk').append(`
     <option id="" value="">Pulsa Axis</option>
@@ -101,8 +117,11 @@ function gas() {
         else if (x == 0818 || x == 0817 || x == 0819 || x == 0859 || x == 0877 || x == 0878) {
             keywoard.classList.remove('is-invalid');
             keywoard.classList.add('is-valid');
-            operator.innerHTML = "<img src='https://i.ibb.co/jLMTpNM/xl.png' width='25' height='25'>"
-            oprator.innerHTML = "<span class='xl'><strong>XL</strong></span >"
+            oprator.innerHTML =
+                `
+                    <img src='https://i.ibb.co/jLMTpNM/xl.png' width='25' height='25'>
+                    <span class='xl'><strong>XL AXIATA</strong></span >
+                `
             $('#produk').empty();
             $('#produk').append(`
     <option id="" value="">Pulsa XL</option>
@@ -114,8 +133,11 @@ function gas() {
         else if (x == 0881 || x == 0882 || x == 0883 || x == 0884 || x == 0885 || x == 0886 || x == 0887 || x == 0888 || x == 0889) {
             keywoard.classList.remove('is-invalid');
             keywoard.classList.add('is-valid');
-            operator.innerHTML = "<img src='https://i.ibb.co/myjJkY7/smartfreen.png' width='25' height='25'>"
-            oprator.innerHTML = "<span class='smartfreen'><strong>SMARTFREEN</strong></span >"
+            oprator.innerHTML =
+                `
+                    <img src='https://i.ibb.co/myjJkY7/smartfreen.png' width='25' height='25'>
+                    <span class='smartfreen'><strong>SMARTFREEN</strong></span >
+                `
             $('#produk').empty();
             $('#produk').append(`
     <option id="" value="">Pulsa Smartfreen</option>
