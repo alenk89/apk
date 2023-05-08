@@ -1,0 +1,300 @@
+
+    .base {
+      background-color: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    input.nomor:focus {
+      outline: none;
+      border-bottom: 2px solid #19A7CE;
+    }
+
+    select.nomor:focus {
+      outline: none;
+      border-bottom: 2px solid #19A7CE;
+
+    }
+
+    .diamond {
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .klik {
+      border-bottom: 2px solid #19A7CE;
+      color: #19A7CE;
+    }
+
+    .produk:hover {
+      background-color: #19A7CE;
+      color: white;
+    }
+
+    .produk {
+      color: #19A7CE;
+      transition: 0.3s;
+    }
+
+    .produk h6 {
+      color: #19A7CE;
+    }
+
+    .harga {
+      margin-bottom: -1vw;
+      font-size: 4vw;
+    }
+
+    .namapro {
+      font-size: 5vw;
+    }
+
+    .bulet {
+      width: 2vw;
+      height: 2vw;
+      background-color: rgba(0, 0, 0, 0.100);
+      color: white;
+
+
+    }
+
+    .posisi {
+      display: flex;
+      justify-content: center;
+    }
+
+    .ubah {
+      width: 90%;
+      background-color: rgba(5, 72, 137, 0.19);
+      color: #19A7CE;
+      border-radius: 10px;
+      font-weight: bold;
+      margin: 5px;
+      border: none;
+      padding: 10px;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .konfir {
+      width: 90%;
+      background-color: #19A7CE;
+      color: white;
+      font-weight: bold;
+      border-radius: 10px;
+      margin: 5px;
+      border: none;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .modal {
+      height: 0px;
+    }
+
+    .detail {
+      margin-top: -20px;
+    }
+
+    .pilih {
+      color: #19A7CE;
+      margin-top: 1vw;
+    }
+
+    .kr {
+      height: 140vw;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      border: none;
+    }
+
+
+    .pisah {
+      width: 100%;
+      height: 10px;
+      background-color: #fafafa;
+    }
+
+    .detail {
+      margin-top: -20px;
+    }
+
+    .satu {
+      font-weight: bold;
+      border-bottom: 2px solid #19A7CE;
+      width: 100%;
+      color: #19A7CE;
+    }
+
+    .dua {
+      width: 100%;
+    }
+
+    .small {
+      color: #6e6e6e;
+      font-size: 5vw;
+    }
+
+    .kanan {
+      text-align: left;
+    }
+
+    .kiri {
+      text-align: right;
+    }
+
+    .row {
+      --bs-gutter-x: 0;
+      --bs-gutter-y: 0;
+    }
+
+    .ml-5 {
+      margin-left: 5px;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      margin: 0;
+      font-size: 18px;
+      line-height: 0;
+      color: #212529;
+      font-weight: 700;
+    }
+
+    .valid-feedback {
+      display: none;
+      width: 100%;
+      margin-top: 0.25rem;
+      font-size: .875em;
+      color: #19A7CE;
+      font-weight: 700;
+    }
+
+    .invalid-feedback {
+      display: none;
+      width: 100%;
+      margin-top: 0.25rem;
+      font-size: .875em;
+      color: #dc3545;
+      font-weight: 700;
+    }
+
+    .details {
+      padding: 10px 0px;
+      margin-top: 20px;
+      background: #19A7CE;
+    }
+
+    .kepala {
+      background: #dc3545;
+    }
+
+    .offcanvas-header {
+      background: white;
+    }
+
+    .offcanvas-body {
+      background: white;
+      border-radius: 20px 20px 0px 0px;
+      padding: 0px;
+    }
+
+    .offcanvas,
+    .offcanvas-lg,
+    .offcanvas-md,
+    .offcanvas-sm,
+    .offcanvas-xl,
+    .offcanvas-xxl {
+      --bs-offcanvas-height: 65%;
+      --bs-offcanvas-zindex: 1100;
+      --bs-offcanvas-bg: transparent;
+    }
+
+    .rincianx {
+      padding: 10px 10px 10px 10px;
+    }
+
+    .rincians {
+      background: #19A7CE;
+      height: 8px;
+      width: 17%;
+      border-radius: 50px;
+    }
+
+    .tombol-bawah {
+      padding: 20px 10px;
+    }
+
+    .rincian-pulsa {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px 15px;
+      background: transparent;
+      margin-top: 0px;
+    }
+
+    .judul {
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .batas {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      border-bottom: 2px dashed rgba(0, 0, 0, .2);
+    }
+
+    .batasx {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid rgba(0, 0, 0, .2);
+    }
+
+    .font-harga {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .fs-16 {
+      font-size: 16px;
+    }
+
+    .bg-app {
+      --bs-bg-opacity: 1;
+      background-color: #19A7CE82;
+      color: #212529;
+      font-size: 16px;
+    }
+
+    .icon-book {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+    }
+
+    .loader {
+      display: flex;
+      width: 70px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .heads {
+      background: #19A7CE;
+      height: 80px;
+    }
+
+    .ml-5{
+      margin-left: 5px;
+    }
+    .img-logo{
+      width: 150px;
+      margin-bottom: 10px;
+    }
