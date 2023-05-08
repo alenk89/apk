@@ -1,0 +1,601 @@
+.row {
+  --bs-gutter-x: 0.5rem;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  --bs-gutter-x: 2.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.loader {
+  display: flex;
+  width: 70px;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background: white;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.bg-head {
+  background: #19a7ce;
+  height: 50px;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+.inp-nomor {
+  border-radius: 5px;
+  margin-top: -40px;
+  border: none;
+  box-shadow: 1px 5px 5px rgba(10, 10, 10, 0.137);
+  padding: 10px 15px;
+}
+
+.get-nomor {
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 5px 5px rgba(10, 10, 10, 0.137);
+  padding: 10px 15px;
+}
+
+.lab {
+  z-index: 1;
+  width: 150px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  background-color: white;
+  font-weight: 550;
+  color: #19a7ce;
+}
+
+.form-lb {
+  margin-top: -10px;
+  font-size: 14px;
+  padding: 12px;
+  font-weight: 500;
+  background-color: transparent;
+  border-radius: 5px;
+  border-color: #19a7ce3b;
+}
+
+.form-lb:focus {
+  box-shadow: none;
+  border: 0.1px solid #19a7ce;
+  background-color: transparent;
+}
+
+::placeholder {
+  font-size: 13px;
+  font-weight: 450;
+}
+
+.fsrc {
+  color: #000;
+}
+
+.produk-nama {
+  font-size: 13px;
+  margin-bottom: 0;
+  font-weight: 700;
+  color: #19a7ce;
+}
+
+.produk-brand {
+  margin-bottom: 0;
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.harganya {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #19a7ce;
+  font-weight: 700;
+  margin-top: -2px;
+}
+
+.produk-harga {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 500;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 5px 15px 5px 15px;
+  color: whitesmoke;
+  border-radius: 3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.c-produk {
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+  background: white;
+}
+
+.btn-select {
+  border: none;
+  color: #19a7ce;
+  border-radius: 50px;
+  width: 100%;
+  background-color: transparent;
+  font-size: 12px;
+  transition: 300ms all;
+  padding: 5px 7px 5px 7px;
+}
+
+.btn-select-act {
+  border: 1px solid #19a7ce;
+  color: white;
+  border-radius: 50px;
+  width: 100%;
+  background-color: #19a7ce;
+  font-size: 12px;
+  transition: 300ms all;
+  padding: 5px 7px 5px 7px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.for-load {
+  color: #19a7ce;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 50%;
+}
+
+.text-null {
+  font-weight: 600;
+  opacity: 0.7;
+  font-size: 13px;
+}
+
+.rc {
+  margin-bottom: 0;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.bg-canvas {
+  background-color: #19a7ce;
+  color: white;
+}
+
+.offcanvas-bottom {
+  height: auto !important;
+}
+
+.indx {
+  font-size: 15px;
+  font-weight: 500;
+  opacity: 0.7;
+  margin-bottom: 0px;
+}
+
+.sal {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  background: #19a7ce;
+  color: white;
+  padding: 5px 10px 5px 10px;
+}
+
+.val {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  color: #41464b;
+}
+
+.dashed {
+  border-top: 1px dashed #8c8b8b;
+}
+
+.bo {
+  box-shadow: 1px 1px 3px #8c8b8b;
+}
+
+.desc {
+  font-size: 15px;
+  opacity: 0.7;
+}
+
+.tombol-beli {
+  background-color: #19a7ce;
+  border: 1px solid #19a7ce;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 8px 15px 8px 15px;
+  font-weight: 700;
+  border-radius: 15px;
+}
+
+a {
+  color: #f8f9fa;
+  text-decoration: none;
+}
+
+.tombol-batal {
+  background-color: transparent;
+  border: 1px solid #dc3545;
+  color: #dc3545;
+  border-radius: 15px;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
+}
+
+#search:focus {
+  box-shadow: none;
+  border: 0.1px solid #19a7ce;
+}
+
+.kontak {
+  margin-top: -36px;
+  margin-bottom: 7px;
+  width: 25px;
+  margin-left: 90%;
+  text-align: center;
+}
+
+.kontak1 {
+  color: white;
+  font-size: 22px;
+  background-image: linear-gradient(135deg, #19a7ce 45%, #0d6efd 95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+* {
+  user-select: none;
+}
+
+.dropdown-menu {
+  overflow: auto;
+  width: 200px !important;
+  border: none;
+  box-shadow: 1px 4px 10px rgba(14, 14, 14, 0.11);
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+.order-last {
+  order: 6 !important;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  justify-content: center;
+  width: 20%;
+}
+
+.col-3 {
+  flex: 0 0 auto;
+  width: 15%;
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(135deg, #19a7ce 40%, #ff6c00 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.order-first {
+  order: -1 !important;
+}
+
+.token {
+  font-size: 14px;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+.group-tombol {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-tombol {
+  font-size: 18px;
+  color: #c539b4;
+  text-decoration: none;
+}
+
+.rincian {
+  background: #ffffff;
+  padding: 10px;
+}
+
+.rincian1 {
+  display: flex;
+  background: #19a7ce;
+  align-content: center;
+  justify-content: space-between;
+  padding: 8px 15px 8px 15px;
+  border-radius: 15px 15px 0px 0px;
+  align-items: center;
+}
+
+.icon-rincian {
+  color: white;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.font-operator {
+  font-size: 14px;
+  padding: 10px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.operator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge-operator {
+  font-weight: 700;
+  color: #19a7ce;
+  font-size: 14px;
+}
+
+.label-input {
+  font-size: 14px;
+  font-weight: 600;
+  color: #19a7ce;
+}
+
+.op-kiri {
+  width: 75%;
+}
+
+.op-kanan {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.icons {
+  width: 50px;
+}
+
+.img-op {
+  width: 30%;
+}
+
+.rincianx {
+  padding: 10px 10px 10px 10px;
+}
+
+.judul {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.rincians {
+  background: #19a7ce;
+  height: 7px;
+  width: 15%;
+  border-radius: 50px;
+  margin-bottom: 5px;
+}
+
+.offcanvas-body {
+  flex-grow: 1;
+  padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+  overflow-y: auto;
+  background: white;
+}
+
+.offcanvas.offcanvas-bottom {
+  right: 0;
+  left: 0;
+  height: var(--bs-offcanvas-height);
+  max-height: 100%;
+  border-top: none;
+  transform: translateY(100%);
+  background: transparent;
+}
+
+.saldo-konfir {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nomor {
+  border: none;
+  border-bottom: 2px solid var(--bs-gray-400);
+  width: 100%;
+  background-color: white;
+}
+
+input.nomor:focus {
+  outline: none;
+  border-bottom: 2px solid #19a7ce;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.titl {
+  color: #19a7ce;
+}
+
+.icon-book {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+.batas {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
+}
+
+.rincian-pulsa {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 15px;
+  background: transparent;
+  margin-top: 0px;
+}
+
+.details {
+  padding: 10px 0px;
+  background: #19a7ce;
+}
+
+.offcanvas-body {
+  background: white;
+  border-radius: 15px 15px 0px 0px;
+  padding: 0px;
+}
+
+.kanan {
+  text-align: left;
+}
+
+.kiri {
+  text-align: right;
+}
+
+.batasx {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.bg-app {
+  --bs-bg-opacity: 1;
+  background-color: #19a7ce82;
+  color: #212529;
+  font-size: 16px;
+}
+
+.font-harga {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.posisi {
+  display: flex;
+  justify-content: center;
+}
+
+.ubah {
+  width: 90%;
+  background-color: rgba(5, 72, 137, 0.19);
+  color: #19a7ce;
+  border-radius: 10px;
+  font-weight: bold;
+  margin: 5px;
+  border: none;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.text-ungu {
+  color: #19a7ce;
+  width: 55%;
+  text-align: end;
+}
+
+.konfir {
+  width: 90%;
+  background-color: #19a7ce;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 5px;
+  border: none;
+  padding: 10px;
+  text-align: center;
+}
+
+.konfir a:hover {
+  color: yellow;
+}
+
+.tombol-bawah {
+  padding: 20px 10px;
+  background: white;
+}
+
+.nav-underline .nav-link.active,
+.nav-underline .show > .nav-link {
+  font-weight: 700;
+  font-size: 14px;
+  color: #19a7ce;
+  background: #e9ecef;
+}
+
+.nav-underline .nav-link {
+  font-size: 14px;
+  font-weight: 700;
+  color: #212529;
+}
+
+.img-logo {
+  width: 150px;
+}
